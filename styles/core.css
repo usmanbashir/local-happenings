@@ -1,0 +1,86 @@
+@charset "utf-8";
+/*
+ * Usman Bashir
+ * http://usmanbashir.com
+ *
+ * Default Stylesheet
+ * Local Happenings
+ *
+ * Version: 1.0.0
+ */
+
+/*
+ * CSS - Table
+ *
+ * 1) General Tags
+ * 2) Layout
+ */
+
+
+/* General Tags */
+
+html, body			{ height: 100%; overflow: hidden; width: 100%; }
+
+body, input, textarea, h1	{ color: #333; font-family: Georgia; font-size: 12pt; }
+
+a				{ color: #000; }
+a:hover				{ text-decoration: none; }
+
+h1				{
+				  border-bottom: 2px solid #ccc;
+				  font-size: 16pt;
+				  font-width: bold;
+				  padding: 5px 0;
+				  text-transform: lowercase;
+				}
+
+h2				{ border-bottom: 1px solid #ccc; font-size: 14pt; margin: 5px 0 10px 0; text-transform: lowercase; }
+h2 small			{ display: block; font-size: 10pt; }
+
+p				{ margin-bottom: 10px; line-height: 16pt; }
+
+strong				{ font-width: bold; }
+
+
+/* Layout */
+
+#container			{
+				  float: right;
+				  height: 100%;
+				  width: 30%;
+				}
+
+#navigation			{ border-bottom: 1px solid #ccc; height: 20px; padding: 2px 0; }
+#navigation li			{ float: left; margin-right: 15px; }
+#navigation a			{ text-decoration: none; }
+#navigation a:hover		{ text-decoration: underline; }
+
+#map				{
+				  border-right: 2px solid #ccc;
+				  height: 100%;
+				  float: left;
+				  width: 69.5%;
+				}
+#about				{ display: none; }
+#about p			{ padding-right: 5px; }
+#content			{ height: 100%; overflow: auto; }
+
+#tweets li			{ border-bottom: 1px solid #eee; margin: 10px 0; padding-right: 5px; }
+#tweets li img			{ float: left; margin-right: 5px; width: 48px; }
+#tweets li a			{ display: block; font-width: bold; margin-bottom: 5px; }
+#tweets li span			{ display: block; margin-left: 53px; }
+#tweets li small		{ display: block; color: #999; font-size: 8pt; margin: 2px 0 5px 53px; }
+
+#status				{
+				  background: #fff;
+				  border-top: 1px solid #ccc;
+				  bottom: 0;
+				  height: 20px;
+				  padding: 5px 0;
+				  position: absolute;
+				  width: 100%;
+				}
+#status li			{ float: left; }
+.google				{ width: 8%; }
+.twitter			{ width: 15%; }
+.geolocation			{ width: 10%; }

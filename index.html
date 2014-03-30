@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta charset="utf-8">
+	<title>Local Happenings</title>
+	<meta name="author" content="Usman Bashir" />
+	<meta name="author-url" content="http://usmanbashir.com" />
+	<meta name="version" content="1.0.0" />
+	<meta name="copyright" content="&copy; 2011 Usman Bashir" />
+	<meta name="robots" content="index, follow" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" href="styles/reset.css" media="screen" />
+	<link rel="stylesheet" href="styles/core.css" media="screen" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<script src="scripts/core.js"></script>
+    </head>
+    <body>
+	<div id="container">
+	    <div id="header">
+		<h1>Local Happenings</h1>
+		<ul id="navigation">
+		    <li><a id="pause-and-resume" href="#">Pause</a></li>
+		    <li><a id="about-app" href="#">About</a></li>
+		</ul>
+	    </div>
+	    <div id="about">
+		<h2>Local Happenings - Prototype <small>Version: 1.0</small></h2>
+		<p>First and for most this is a very fast &amp; roughly built prototype so there are bound to be bugs &amp; loose ends but I hope you can look past those and get a feel for the concept behind it.</p>
+		<p>There were so many features that I wanted to add but could not due to the lack of time and the need to get the prototype out fast.</p>
+		<p>But if you have any comments, suggestions or bug reports about this mash up then please feel free to email me at <a href="mailto:me@usmanbashir.com">me@usmanbashir.com</a>.</p>
+		<p>You can also follow me on Twitter at <a href="http://twitter.com/ubax">@ubax</a> and for more information about me please visit <a href="http://usmanbashir.com">usmanbashir.com</a>.</p>
+		<p>Thanks for checking out this mash up.</p>
+		<p><small>Note: It seems that the detection of the users current geo location is only working properly in Firefox 3.6 and Google Chrome Canary Build 11 for the time being. I will look in to this issue in detail as soon as I can.</small></p>
+	    </div>
+	    <div id="content">
+		<ul id="tweets">
+		</ul>
+	    </div>
+	    <ul id="status">
+		<li class="twitter">twitter</li>
+		<li class="google">google</li>
+		<li class="geolocation">geo location</li>
+	    </ul>
+	</div>
+	<div id="map"></div>
+	<script type="text/javascript">
+	    var _gaq = _gaq || [];
+	    _gaq.push(['_setAccount', 'UA-21836958-1']);
+	    _gaq.push(['_trackPageview']);
+
+	    (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	    })();
+	</script>	
+    </body>
+</html>
