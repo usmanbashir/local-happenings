@@ -1,4 +1,4 @@
-#Local Happenings#
+# Local Happenings
 
 This is a old late night project from back in 2011, that I spent a couple of hours on for some demo.
 
